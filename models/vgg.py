@@ -55,7 +55,7 @@ def vgg(rgb, train_mode=True):
 
     relu7 = tf.cond(train_mode, lambda: tf.nn.dropout(relu7, dropout), lambda: relu7)
 
-    fc8 = fc_layer(relu7, 4096, 1000, "fc8")
+    fc8 = fc_layer(relu7, 4096, 2, "fc8")
 
     prob = tf.nn.softmax(fc8, name="prob")
 
