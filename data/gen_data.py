@@ -31,11 +31,9 @@ new_dict={}
 check = ["normal"]
 for j in dic:
     for i in check:
-
         if i in dic[j].lower():
             st+=i
     if st == "":
         st += "abnormal"
     new_dict[j] = st
-
     st=""

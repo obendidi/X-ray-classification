@@ -4,10 +4,17 @@ import re
 import json
 import urllib
 import sys
+import os
 
-path = sys.argv[1]
-if path[-1]!="/":
-    path+="/"
+path = "images/"
+
+print("Saving images in",path)
+if not os.path.isdir(path):
+    os.mkdir(path)
+else :
+    print("Found path already exsting , removing all images to start again !")
+    for f in os.listdir(path):
+        os.remove(f)
 
 
 domain = 'https://openi.nlm.nih.gov/'
