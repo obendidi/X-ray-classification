@@ -15,10 +15,7 @@ else :
     print("Found path already exsting , removing all images to start again !")
     files = os.listdir(path)
     for f in files:
-        try :
-            os.remove(f)
-        except :
-            continue
+        os.remove(path+f)
 
 
 domain = 'https://openi.nlm.nih.gov/'
