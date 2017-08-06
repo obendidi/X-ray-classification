@@ -5,14 +5,20 @@ import json
 import urllib
 import sys
 import os
+import logging
+
+logging.basicConfig(format='%(asctime)s %(levelname)s %(message)s',
+                    level=logging.INFO,
+                    stream=sys.stdout)
+
 
 path = "images/"
 
-print("Saving images in",path)
+logging.info("Saving images in {}".format(path))
 if not os.path.isdir(path):
     os.mkdir(path)
 else :
-    print("Found path already exsting , removing all images to start again !")
+    logging.info("Found path already exsting , removing all images to start again !")
     files = os.listdir(path)
     for f in files:
         os.remove(path+f)
@@ -58,7 +64,10 @@ def extract(url):
         urllib.urlretrieve(domain+img, path+str(img_no)+".png")
         with open('data_new.json', 'w') as f:
             json.dump(final_data, f)
-        print final_data[img_no]
+
+        output = "Downloading Images : {}".format(img_no)
+        sys.stdout.write("\r\x1b[K" + output)
+        sys.stdout.flush()
     except :return
 
 
@@ -76,7 +85,6 @@ def main():
 
         next_page_url = tree.xpath('//footer/a/@href')
 
-        print 'extract'
         links = [domain + x['nodeRef'] for x in json_data]
         for link in links:
             extract(link)
