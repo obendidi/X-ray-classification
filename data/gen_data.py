@@ -66,19 +66,22 @@ logging.info("Generating text files of data !")
 
 f = open('train.txt','w')
 for lab in labels_train :
-    f.write(lab+" "+os.path.abspath("images/"+str(id_im)+".png\n"))
+    if os.path.isfile("images/"+str(id_im)+".png"):
+        f.write(lab+" "+os.path.abspath("images/"+str(id_im)+".png\n"))
     id_im +=1
 f.close()
 
 f = open('val.txt','w')
 for lab in labels_val :
-    f.write(lab+" "+os.path.abspath("images/"+str(id_im)+".png\n"))
+    if os.path.isfile("images/"+str(id_im)+".png"):
+        f.write(lab+" "+os.path.abspath("images/"+str(id_im)+".png\n"))
     id_im +=1
 f.close()
 
 f = open('test.txt','w')
 for lab in labels_test :
-    f.write(lab+" "+os.path.abspath("images/"+str(id_im)+".png\n"))
+    if os.path.isfile("images/"+str(id_im)+".png"):
+        f.write(lab+" "+os.path.abspath("images/"+str(id_im)+".png\n"))
     id_im +=1
 f.close()
 
