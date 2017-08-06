@@ -13,7 +13,8 @@ if not os.path.isdir(path):
     os.mkdir(path)
 else :
     print("Found path already exsting , removing all images to start again !")
-    for f in os.listdir(path):
+    files = os.listdir(path)
+    for f in files:
         os.remove(f)
 
 
