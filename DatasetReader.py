@@ -30,7 +30,8 @@ class BatchDatset:
         self.__channels = True
         self.images = np.array([self._transform(filename.split(" ")[1]) for filename in self.files])
         self.labels = np.array(
-            [1. if filename.split(" ")[0] == "normal" else 0. for filename in self.files])
+            [1 if filename.split(" ")[0] == "normal" else 0 for filename in self.files])
+        self.labels = self.labels.reshape((self.labels.shape[0],1))
         logging.info("Images shapes : {}".format(self.images.shape))
         logging.info("Labels shapes : {}".format(self.labels.shape))
 

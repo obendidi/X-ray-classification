@@ -19,7 +19,6 @@ with open('data_new.json') as data_file:
     lst = []
     n=0
     for  i in data:
-        # print i
         dic[i] = "/".join(data[i]['items'])
 
 val_counter = Counter(dic.values())
