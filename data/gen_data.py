@@ -45,40 +45,17 @@ for j in dic:
     new_dict[j] = st
     st=""
 
-
-logging.info("Splitting data : 0.6 train, 0.2 validation and 0.2 for test!")
-
 d = {int(k):v for k,v in new_dict.items()}
 od = collections.OrderedDict(sorted(d.items()))
 id_im = 1
 labels = list(od.values())
 
-labels_train = labels[:int(len(labels)*0.6)]
-labels_val = labels[int(len(labels)*0.6):int(len(labels)*0.8)]
-labels_test = labels[int(len(labels)*0.8):]
-
-logging.info("size of train data is {}".format(len(labels_train)))
-logging.info("size of val data is {}".format(len(labels_val)))
-logging.info("size of test data is {}".format(len(labels_test)))
+logging.info("size of data is {}".format(len(labels)))
 
 logging.info("Generating text files of data !")
 
-f = open('train.txt','w')
-for lab in labels_train :
-    if os.path.isfile("images/"+str(id_im)+".png"):
-        f.write(lab+" "+os.path.abspath("images/"+str(id_im)+".png\n"))
-    id_im +=1
-f.close()
-
-f = open('val.txt','w')
-for lab in labels_val :
-    if os.path.isfile("images/"+str(id_im)+".png"):
-        f.write(lab+" "+os.path.abspath("images/"+str(id_im)+".png\n"))
-    id_im +=1
-f.close()
-
-f = open('test.txt','w')
-for lab in labels_test :
+f = open('data.txt','w')
+for lab in labels :
     if os.path.isfile("images/"+str(id_im)+".png"):
         f.write(lab+" "+os.path.abspath("images/"+str(id_im)+".png\n"))
     id_im +=1
