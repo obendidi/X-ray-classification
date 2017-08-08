@@ -112,3 +112,7 @@ checkpoint
 logs/*
 
 *.ckpt
+
+*.pbtxt
+
+log_test_eval/
