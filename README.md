@@ -35,7 +35,7 @@ In this little/first try we will be retraining the last layer of inception v2 of
 ## Results on test set
 
 **Streaming Accuracy** : *68.70 %*
-<img src="https://github.com/bendidi/X-ray-classification/blob/master/data/sample_imgs/validation_accuracy.png" width="500" height="500" />
+<img src="https://github.com/bendidi/X-ray-classification/blob/master/data/sample_imgs/validation_accuracy.png" width="800" height="400" />
 
 
 **Recall** : *coming soon*
@@ -44,5 +44,5 @@ In this little/first try we will be retraining the last layer of inception v2 of
 
 ## Sample Predictions
 
-<img src="https://github.com/bendidi/X-ray-classification/blob/master/data/sample_imgs/figure_1-16.png" width="260" height="260"/> <img src="https://github.com/bendidi/X-ray-classification/blob/master/data/sample_imgs/figure_1-2.png" width="260" height="260" /> <img src="https://github.com/bendidi/X-ray-classification/blob/master/data/sample_imgs/figure_1-5.png" width="260" height="260" />
-<img src="https://github.com/bendidi/X-ray-classification/blob/master/data/sample_imgs/figure_191.png" width="260" height="260" /> <img src="https://github.com/bendidi/X-ray-classification/blob/master/data/sample_imgs/figure_1-3.png" width="260" height="260" /> <img src="https://github.com/bendidi/X-ray-classification/blob/master/data/sample_imgs/figure_51-1.png" width="260" height="260" />
+<img src="https://github.com/bendidi/X-ray-classification/blob/master/data/sample_imgs/figure_1-16.png" width="300" height="300"/> <img src="https://github.com/bendidi/X-ray-classification/blob/master/data/sample_imgs/figure_1-2.png" width="300" height="300" /> <img src="https://github.com/bendidi/X-ray-classification/blob/master/data/sample_imgs/figure_1-5.png" width="300" height="300" />
+<img src="https://github.com/bendidi/X-ray-classification/blob/master/data/sample_imgs/figure_191.png" width="300" height="300" /> <img src="https://github.com/bendidi/X-ray-classification/blob/master/data/sample_imgs/figure_1-3.png" width="300" height="300" /> <img src="https://github.com/bendidi/X-ray-classification/blob/master/data/sample_imgs/figure_51-1.png" width="300" height="300" />
