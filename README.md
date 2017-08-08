@@ -1,2 +1,9 @@
 # X-ray-classification
-using medical X-ray Images to detect diseases and classify chest Images 
+
+Exploiting transfer learning methods to try and classify X-ray chest Images into normal(healthy) **vs** abnormal(sick)
+
+we will see the performance of transfer learning using the official pre-trained model offered by Google (INCEPTION-RESNET-V2 MODEL), which can be found in TensorFlow’s model library
+
+In this little/first try we will be retraining the last layer of inception v2 of google to classify the images using adam optimizer and learning rate decay
+
+## Image example

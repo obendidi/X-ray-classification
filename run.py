@@ -28,11 +28,11 @@ items_to_descriptions = {
     'label': 'A label that is as such -- 0:abnromal/sick, 1:normal/healthy'
 }
 #================= TRAINING INFORMATION ==================
-num_epochs = 1
+num_epochs = 30
 
-batch_size = 8
+batch_size = 16
 
-initial_learning_rate = 0.0002
+initial_learning_rate = 0.0001
 learning_rate_decay_factor = 0.7
 num_epochs_before_decay = 2
 
