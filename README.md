@@ -66,5 +66,7 @@ In this little/first try we will be retraining the last layer of inception v2 of
 ## References
 
   [Xvision](https://github.com/ayush1997/Xvision)
+
   [tensorflow.slim](https://github.com/tensorflow/models/tree/master/slim)
+  
   [tuto.transfer learning](https://kwotsin.github.io/tech/2017/02/11/transfer-learning.html)
