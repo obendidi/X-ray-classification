@@ -7,3 +7,6 @@ we will see the performance of transfer learning using the official pre-trained 
 In this little/first try we will be retraining the last layer of inception v2 of google to classify the images using adam optimizer and learning rate decay
 
 ## Image example
+
+<img src="https://github.com/bendidi/X-ray-classification/blob/master/data/sample_imgs/28.png" width="150" height="150" />
+<img src="https://github.com/bendidi/X-ray-classification/blob/master/data/sample_imgs/29.png" width="150" height="150" />
