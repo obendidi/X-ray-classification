@@ -23,8 +23,6 @@ In this little/first try we will be retraining the last layer of inception v2 of
 
 **model used** : INCEPTION-RESNET-V2
 
-**training layers** : Last layer only
-
 **learning rate** : 0.0001 with a decay factor of 0.7 each 2 epochs
 
 **batch size** : 16
