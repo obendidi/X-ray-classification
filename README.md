@@ -8,5 +8,5 @@ In this little/first try we will be retraining the last layer of inception v2 of
 
 ## Image example
 
-<img src="https://github.com/bendidi/X-ray-classification/blob/master/data/sample_imgs/28.png" width="200" height="200"/> <img src="https://github.com/bendidi/X-ray-classification/blob/master/data/sample_imgs/29.png" width="200" height="200" /> <img src="https://github.com/bendidi/X-ray-classification/blob/master/data/sample_imgs/30.png" width="200" height="200" />
-<img src="https://github.com/bendidi/X-ray-classification/blob/master/data/sample_imgs/31.png" width="200" height="200" /> <img src="https://github.com/bendidi/X-ray-classification/blob/master/data/sample_imgs/32.png" width="200" height="200" /> <img src="https://github.com/bendidi/X-ray-classification/blob/master/data/sample_imgs/33.png" width="200" height="200" />
+<img src="https://github.com/bendidi/X-ray-classification/blob/master/data/sample_imgs/28.png" width="300" height="300"/> <img src="https://github.com/bendidi/X-ray-classification/blob/master/data/sample_imgs/29.png" width="300" height="300" /> <img src="https://github.com/bendidi/X-ray-classification/blob/master/data/sample_imgs/30.png" width="300" height="300" />
+<img src="https://github.com/bendidi/X-ray-classification/blob/master/data/sample_imgs/31.png" width="300" height="300" /> <img src="https://github.com/bendidi/X-ray-classification/blob/master/data/sample_imgs/32.png" width="300" height="300" /> <img src="https://github.com/bendidi/X-ray-classification/blob/master/data/sample_imgs/33.png" width="300" height="300" />
