@@ -51,11 +51,36 @@ In this little/first try we will be retraining the last layer of inception v2 of
 ## Getting started
 
 ##### get the data :
-  1 - Use `python data/get_data.py` to download scrapped image data from [openi.nlm.nih.gov](https://openi.nlm.nih.gov/gridquery.php?q=&it=x,xg&sub=x&m=1&n=101). It has a large base of Xray,MRI, CT scan images publically available.Specifically Chest Xray Images have been scraped.The images will be downloaded and saved in `data/images/` and the labels in `data/data_new.json` (it might take a while)
+In the `data` folder (`cd data/`) :
 
-  2 - Use `python data/gen_data.py` to sort labels into Normal/Abnormal classes, generate full path to coresponding Images and write them to `data/data.txt`
+  1 - Use `python get_data.py` to download scrapped image data from [openi.nlm.nih.gov](https://openi.nlm.nih.gov/gridquery.php?q=&it=x,xg&sub=x&m=1&n=101). It has a large base of Xray,MRI, CT scan images publically available.Specifically Chest Xray Images have been scraped.The images will be downloaded and saved in `images/` and the labels in `data_new.json` (it might take a while)
 
-  3 - Use `python data/convert_to_tf_records.py` to generate tf records of the data.
+  Some info about the dataset :
+  ```
+    Total number of Images : 7469
+    The classes with most occurence in the dataset:
+
+    		 ('normal', 2696)
+    		 ('No Indexing', 172)
+    		 ('Lung/hypoinflation', 88)
+    		 ('Thoracic Vertebrae/degenerative/mild', 55)
+    		 ('Thoracic Vertebrae/degenerative', 44)
+    		 ('Spine/degenerative/mild', 36)
+    		 ('Spine/degenerative', 35)
+    		 ('Spondylosis/thoracic vertebrae', 33)
+    		 ('Granulomatous Disease', 32)
+    		 ('Cardiomegaly/mild', 32)
+  ```
+  2 - Use `python gen_data.py` to sort labels into Normal/Abnormal classes, generate full path to coresponding Images and write them to `data.txt`
+
+
+  ```
+  number of normal chest Images(healthy people) 2696:
+  number of abnormal chest Images(sick people) 4773:
+  ```
+  
+  3 - Use `python convert_to_tf_records.py` to generate tf records of the data.
+
 
 #### training & evaluation:
 
@@ -68,5 +93,5 @@ In this little/first try we will be retraining the last layer of inception v2 of
   [Xvision](https://github.com/ayush1997/Xvision)
 
   [tensorflow.slim](https://github.com/tensorflow/models/tree/master/slim)
-  
+
   [tuto.transfer learning](https://kwotsin.github.io/tech/2017/02/11/transfer-learning.html)
