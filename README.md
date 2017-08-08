@@ -78,11 +78,13 @@ In the `data` folder (`cd data/`) :
   number of normal chest Images(healthy people) 2696:
   number of abnormal chest Images(sick people) 4773:
   ```
-  
+
   3 - Use `python convert_to_tf_records.py` to generate tf records of the data.
 
 
 #### training & evaluation:
+
+  Download the Pre-trained inception model in [here](http://download.tensorflow.org/models/inception_resnet_v2_2016_08_30.tar.gz) and unzip it in `ckpt/` folder.
 
   Use `python train.py` to start the training !(trained model will be saved in `logs/`)
 
