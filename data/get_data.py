@@ -61,7 +61,7 @@ def extract(url):
     final_data[img_no]['items'] = items
     final_data[img_no]['img'] = domain + img
     try :
-        urllib.urlretrieve(domain+img, path+str(img_no)+".png")
+        urllib.request.urlretrieve(domain+img, path+str(img_no)+".png")
         with open('data_new.json', 'w') as f:
             json.dump(final_data, f)
 
